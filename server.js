@@ -150,6 +150,6 @@ app.delete('/notes/:id', function (req, res) {
   });
 });
 
-app.listen(3000, function () {
-  console.log('Server started. Open http://localhost:3000 in your browser.');
+app.listen(8080, function () {
+  console.log('Server started. Open http://localhost:8080 in your browser.');
 });
