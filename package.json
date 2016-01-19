@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "chat-example",
   "version": "0.0.0",
   "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
@@ -10,7 +9,6 @@
     "async": "~0.2.8",
     "express": "~3.2.4",
     "socket.io": "~0.9.14"
-=======
   "name": "chapter3",
   "version": "1.0.0",
   "description": "",
@@ -28,6 +26,5 @@
   "dependencies": {
     "body-parser": "^1.9.3",
     "express": "^4.10.2"
->>>>>>> d8b49cebb1e2146027111d3ad67b9bc4e3fe638b
   }
 }
