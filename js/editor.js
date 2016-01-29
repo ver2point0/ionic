@@ -4,7 +4,7 @@ angular.module("App")
     
     $scope.view = function (index) {
       $scope.editing = false;
-      $scope.content = $scope.notes(index);
+      $scope.content = $scope.notes[index];
     }
     
     $http.get("/notes").success(function (data) {
