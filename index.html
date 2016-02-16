@@ -35,7 +35,11 @@
         <div class="panel-footer">{{content.date | date:'short'}}</div>
       </div>
       <form name="editor" class="panel panel-default" ng-show="editing">
+        <div class="panel-heading">
+          <h3 class="panel-title"><input type="text" class="form-control" ng-model="content.title" placeholder="New note" required /></h3>
+        </div>
       </form>
+      
     </div>
     
   </div>
