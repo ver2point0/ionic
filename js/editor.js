@@ -15,6 +15,23 @@ angular.module("App")
       };
     };
     
+    $scope.save = function() {
+      $scope.content.date = new Date();
+      
+      if ($scope.content.id) {
+        $http.put('/notes' + $scope.content.id, $scope.content).success(function
+        (data) {
+          $scope.editing = false;
+        });
+      } else {
+        $scope.content.id = Date.now();
+        $http.post('/notes', $scope.content).success(function (data) {
+          $scope.notes.push($scope.content)
+          $scope.editing = false;
+        });
+      }
+    };
+    
     $http.get("/notes").success(function (data) {
       $scope.notes = data;
     }).error(function (err) {
