@@ -48,13 +48,15 @@
           </div>
           <form name="editor" class="panel panel-default" ng-show="editing">
             <div class="panel-heading">
-              <h3 class="panel-title"><input type="text" class="form-control" ng-model="content.title" placeholder="New Note" required /></h3>
+              <h3 class="panel-title">
+                <input type="text" class="form-control" ng-model="content.title" placeholder="New Note" required/></h3>
             </div>
             <div class="panel-body">
               <div class="row">
                 <div class="col-sm-6">
                   <h3>Editor</h3>
-                  <textarea class="form-control editor" rows="10" ng-model="content.content" placeholder="Note Content" required></textarea>
+                  <textarea class="form-control editor" rows="10" ng-model="content.content" placeholder="Note Content" required>
+                  </textarea>
                 </div>
                 <div class="col-sm-6">
                   <h3>Preview</h3>
