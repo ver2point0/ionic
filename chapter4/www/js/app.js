@@ -2,9 +2,14 @@ angular.module('App', ['ionic'])
   .config(function ($stateProvider, $urlRouterProvier) {
     $stateProvider.state("home", {
       url: "/home",
-      templateUrl: "views/home.home.html"
+      templateUrl: "views/home/home.html"
     });
     $urlRouterProvier.otherwise("/home");
+  })
+  .state("reservation", {
+    url: "/reservation",
+    controller: "ReservationController",
+    templateUrl: "views/reservation/reservation.html"
   })
   .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -16,3 +21,4 @@ angular.module('App', ['ionic'])
       }
     });
   })
+  
