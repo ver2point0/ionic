@@ -11,6 +11,11 @@ angular.module('App', ['ionic'])
     controller: "ReservationController",
     templateUrl: "views/reservation/reservation.html"
   })
+  .state("weather", {
+    url: "/weather",
+    controller: "WeatherController",
+    templateUrl: "views/weather/weather.html"
+  })
   .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
       if(window.cordova && window.cordova.plugins.Keyboard) {
