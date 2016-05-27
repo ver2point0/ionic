@@ -21,9 +21,13 @@ angular.module('App', ['ionic'])
       url: "/restaurants",
       controller: "RestaurantsController",
       templateUrl: "views/restaurants/restaurants.html"
+    })
+    .state("tour", {
+      url: "/tour",
+      templateUrl: "views/tour/tour.html"
     });
     
-  $urlRouterProvier.otherwise("/home");
+  $urlRouterProvier.otherwise("/tour");
   
 })
   
@@ -37,4 +41,3 @@ angular.module('App', ['ionic'])
     }
   });
 })
-  
