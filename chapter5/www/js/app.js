@@ -5,13 +5,11 @@ angular.module('App', ['ionic'])
   $stateProvider
     .state("tabs", {
       url: "/tabs",
-      abstract: true,
-      templateUrl: "views/tab/tabs.html"
+      templateUrl: "views/tabs/tabs.html"
     });
     
     $urlRouteProvider.otherwise("/tabs");
 })
-
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
