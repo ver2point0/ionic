@@ -12,8 +12,7 @@ angular.module('App', ['ionic'])
       url: "/rates",
       views: {
         "rates-tab": {
-          templateUrl: "views/rates/rates.html",
-          controller: "RatesController"
+          templateUrl: "views/rates/rates.html"
         }
       }
     })
@@ -21,8 +20,7 @@ angular.module('App', ['ionic'])
       url: "/history/currency",
       views: {
         "histtory-tab": {
-          templateUrl: "views/history/history.html",
-          controller: "HistoryController"
+          templateUrl: "views/history/history.html"
         }
       }
     })
@@ -30,17 +28,7 @@ angular.module('App', ['ionic'])
       url: "/currencies",
       views: {
         "currencies-tab": {
-          templateUrl: "views/currencies/currencies.html",
-          controller: "CurrenciesController"
-        }
-      }
-    })
-    .state("tabs.detail", {
-      url: "/detail/currency",
-      views: {
-        "rates-tab": {
-          templateUrl: "views/detail/detail.html",
-          controller: "DetailController"
+          templateUrl: "views/currencies/currencies.html"
         }
       }
     });
