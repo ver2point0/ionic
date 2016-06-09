@@ -46,3 +46,13 @@ angular.module('App', ['ionic'])
     }
   });
 })
+
+.factory("Currencies", function () {
+  return [
+    { code: "AUD", text: "Australian Dollar", selected: true },
+    { code: "BRL", text: "Brazilian Real", selected: false },
+    { code: "CAD", text: "Canadian Dollar", selected: true },
+    { code: "CHF", text: "Swiss Franc", selected: false },
+    { code: "CNY", text: "Chinese Yuan", selected: true },
+    ];
+});
