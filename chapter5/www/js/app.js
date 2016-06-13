@@ -61,5 +61,12 @@ angular.module('App', ['ionic'])
     { code: "MXN", text: "Mexican Peso", selected: true},
     { code: "NOK", text: "Norwegian Krone", selected: true},
     { code: "NZD", text: "New Zealand Dollar", selected: false},
+    { code: "PLN", text: "Polish Zloty", selected: false },
+    { code: "RON", text: "Romanian Leu", selected: false },
+    { code: "RUB", text: "Russion Ruble", selected: true },
+    { code: "SEK", text: "Swedish Krona", selected: false },
+    { code: "SGD", text: "Singapore Dollar", selected: false },
+    { code: "USD", text: "United States Dollar", selected: true },
+    { code: "ZAR", text: "South African Rand", selected: false }
     ];
 });
