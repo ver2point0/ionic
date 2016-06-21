@@ -1,5 +1,10 @@
 .item .price {
-  
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFF;
+  position: absolute;
+  background: #666;
+  right: 15px;
 }
 
 .item .price.positive {
