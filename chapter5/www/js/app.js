@@ -12,7 +12,8 @@ angular.module('App', ['ionic'])
       url: "/rates",
       views: {
         "rates-tab": {
-          templateUrl: "views/rates/rates.html"
+          templateUrl: "views/rates/rates.html",
+          controller: "RatesController"
         }
       }
     })
