@@ -6,11 +6,13 @@ angular.module("App")
   $scope.load = function () {
     $http.get("https://api.bitcoinaverage.com/ticker/all").success(
       function (tickers) {
-        angular.forEach($scope.currencies, function (currency) {
-          currency.ticker = tickers[currency.code];
-          currency.ticker.timestamp = new Date(currency.ticker.timestamp);
-        });
-      });
+    angular.forEach($scope.currencies, function (currency) {
+      currency.ticker = tickers[currency.code];
+      currency.ticker.timestamp = new Date(currency.ticker.timestamp);
+    });
+    }).finally(function () {
+      $scope.$broadcast("scroll.refreshComplete");
+    });
   };
   
   $scope.load();
