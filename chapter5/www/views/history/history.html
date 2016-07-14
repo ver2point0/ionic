@@ -5,6 +5,9 @@
         <div class="input-label">
           Currency
         </div>
+        <select ng-change="changeCurrency()" ng-model="history.currency">
+          <option ng-repeat="currencies in currencies | filter:{selected:true}" value="{{currency.code}}" ng-selected="history.currency == currency.code"></option>
+        </select>
       </label>
     </div>
   </ion-content>
