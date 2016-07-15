@@ -6,7 +6,7 @@
           Currency
         </div>
         <select ng-change="changeCurrency()" ng-model="history.currency">
-          <option ng-repeat="currencies in currencies | filter:{selected:true}" value="{{currency.code}}" ng-selected="history.currency == currency.code"></option>
+          <option ng-repeat="currencies in currencies | filter:{selected:true}" value="{{currency.code}}" ng-selected="history.currency == currency.code">{{currency.code}} - {{currency.text}}</option>
         </select>
       </label>
     </div>
