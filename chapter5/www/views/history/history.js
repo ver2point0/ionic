@@ -39,7 +39,12 @@ angular.module("App")
     };
     
     angular.forEach(prices, function (price, index) {
-      
+      price = price.split(',');
+      var date = new Date(price[0].replace(' ', 'T')).getTime();
+      var value = parseFloat(price[3]);
+      if (date && value > 0) {
+        series.data.push([date, value]); 
+      }
     });
     
     $scope.chart.series.push(series);
