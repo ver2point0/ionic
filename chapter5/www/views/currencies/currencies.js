@@ -9,5 +9,8 @@ angular.module('App')
     $scope.state.reordering = false;
   });
   
-  
+  $scope.move = function(currency, fromIndex, toIndex) {
+    $scope.currencies.splice(fromIndex, 1);
+    $scope.currencies.splice(toIndex, 0, currency);
+  };
 });
