@@ -5,5 +5,9 @@ angular.module('App')
     reordering: false
   };
   
+  $scope.$on('$stateChangeStart', function () {
+    $scope.state.reordering = false;
+  });
+  
   
 });
