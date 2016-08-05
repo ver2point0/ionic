@@ -4,8 +4,13 @@
   </ion-nav-buttons>
   <ion-content>
     <ion-list show-reorder="state.reordering">
-      <ion-item ng-repeat="currency in currencies">
+      <ion-item class="item-toggle" ng-repeat="currency in currencies">
         {{currency.code}} - {{currency.text}}
+        <label class="toggle toggle-balanced">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
         <ion-reorder-button class="ion-navicon" on-reorder="move(currency, $fromIndex, $toIndex)"></ion-reorder-button>
       </ion-item>
     </ion-list>
